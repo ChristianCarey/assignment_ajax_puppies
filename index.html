@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/puppy_client.js"></script>
+    <script src="js/breed_client.js"></script>
+    <script src="js/initialize.js"></script>
+  </head>
+  <body class="container">
+    <div id="flash"></div>
+    <h1>The AJAX Puppy Shelter</h1>
+    <main>
+      <form id="new-puppy">
+        <h2>Register a new Puppy</h2>
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label>Breed</label>
+          <select class="form-control" id="breeds">
+            <option>Poodle</option>
+            <option>Rottweiler</option>
+            <option>Great Dane</option>
+            <option>Sheepdog</option>
+            <option>Yorkshire Terrier</option>
+          </select>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Register Puppy">
+      </form>
+      <section id="puppies">
+        <h2>Our Puppies</h2>
+        <h3>We have no puppies.</h3>
+        <ul id ="puppies-list">
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
